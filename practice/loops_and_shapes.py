@@ -54,8 +54,13 @@ def find_largest(numbers: List[float]) -> float:
     Example:
         find_largest([1, 5, 3, 9, 2]) -> 9
     """
-    pass
+    largest = numbers[0]
+    
+    for i in range(0,len(numbers)):
+        if numbers[i] >= largest:
+            largest = numbers[i]
 
+    return largest
 
 def count_even_numbers(numbers: List[int]) -> int:
     """Return how many numbers in the list are even (0 counts as even).
