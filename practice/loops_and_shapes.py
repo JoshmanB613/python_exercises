@@ -95,7 +95,12 @@ def count_vowels(string: str) -> int:
     Example:
         count_vowels("hello world") -> 3
     """
-    pass
+    vowels = "aeiouAEIOU"
+    count = 0
+    for i in string:
+        if i in vowels:
+            count += 1
+    return count
 
 
 def multiply_list_elements(numbers: List[float]) -> float:
