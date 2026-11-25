@@ -186,8 +186,16 @@ def create_multiplication_table(n: int) -> List[List[int]]:
     Example:
         create_multiplication_table(3) -> [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
     """
-    pass
+    
+    mult_table = []
+    temp_table = []
 
+    for i in range(1,n+1):
+        for b in range(1,n+1):
+            temp_table.append(i*b)
+        mult_table.append(temp_table)
+        temp_table = []
+    return mult_table
 
 def count_character_frequency(string: str) -> Dict[str, int]:
     """Return a dictionary mapping each character to how often it appears.
