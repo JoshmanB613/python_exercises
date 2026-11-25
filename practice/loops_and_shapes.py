@@ -143,8 +143,25 @@ def fibonacci_sequence(n: int) -> List[int]:
     Example:
         fibonacci_sequence(5) -> [0, 1, 1, 2, 3]
     """
-    pass
+    a=0
+    b=1
+    c=a + b
 
+    list_ = []
+
+    for i in range(1,n+1):
+        if i == 1:
+            list_.append(0)
+        elif i== 2:
+            list_.append(1)
+        elif i == 3:
+            list_.append(1)
+        else:
+            a=b
+            b=c
+            c=b+a
+            list_.append(c)
+    return list_
 
 def remove_vowels(string: str) -> str:
     """Return the string with all vowels (any case) removed.
