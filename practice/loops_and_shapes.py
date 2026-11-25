@@ -224,8 +224,14 @@ def reverse_words(sentence: str) -> str:
     Example:
         reverse_words("hello world") -> "olleh dlrow"
     """
-    pass
+    sentence = sentence.split()
 
+    new_sentence = ""
+
+    for i in sentence:
+        new_sentence += i[::-1] + " "
+
+    return new_sentence.strip()
 
 # ---------------------------------------------------------------------------
 # 3. Algorithms
