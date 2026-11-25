@@ -205,8 +205,18 @@ def count_character_frequency(string: str) -> Dict[str, int]:
     Example:
         count_character_frequency("hello") -> {'h': 1, 'e': 1, 'l': 2, 'o': 1}
     """
-    pass
+    seen = []
 
+    for i in string:
+        if i not in seen:
+            seen.append(i)
+    
+    diction = {}
+
+    for i in seen:
+        diction[i]= string.count(i)
+    
+    return diction
 
 def reverse_words(sentence: str) -> str:
     """Reverse the letters of each word but keep the word order.
