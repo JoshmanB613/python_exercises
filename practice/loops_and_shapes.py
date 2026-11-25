@@ -169,7 +169,15 @@ def remove_vowels(string: str) -> str:
     Example:
         remove_vowels("hello world") -> "hll wrld"
     """
-    pass
+    vowels = 'AEIOUaeiou'
+
+    new_string = ""
+    
+    for i in string:
+        if i not in vowels:
+            new_string += i
+
+    return new_string
 
 
 def create_multiplication_table(n: int) -> List[List[int]]:
