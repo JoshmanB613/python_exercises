@@ -29,8 +29,11 @@ def count_items(items: list) -> int:
     Example:
         count_items(['a', 'b', 'c']) -> 3
     """
-    pass
+    count = 0
+    for i in items:
+        count += 1
 
+    return count
 
 def sum_numbers(numbers: List[float]) -> float:
     """Return the sum of all numbers in the list (0 for an empty list).
