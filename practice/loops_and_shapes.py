@@ -111,7 +111,11 @@ def multiply_list_elements(numbers: List[float]) -> float:
     Example:
         multiply_list_elements([1, 2, 3, 4]) -> 24
     """
-    pass
+    num = 1
+    for i in numbers:
+        num *= i
+
+    return num
 
 
 # ---------------------------------------------------------------------------
