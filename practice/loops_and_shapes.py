@@ -68,8 +68,14 @@ def count_even_numbers(numbers: List[int]) -> int:
     Example:
         count_even_numbers([1, 2, 3, 4, 5, 6]) -> 3
     """
-    pass
+    
+    count = 0
 
+    for i in numbers:
+        if i%2 == 0:
+            count += 1
+
+    return count
 
 def sum_digits(number: int) -> int:
     """Return the sum of the digits of a non-negative integer.
