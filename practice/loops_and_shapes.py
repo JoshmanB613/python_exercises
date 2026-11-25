@@ -83,8 +83,11 @@ def sum_digits(number: int) -> int:
     Example:
         sum_digits(123) -> 6
     """
-    pass
-
+    numbers  = list(str(number))
+    total = 0
+    for i in range(len(numbers)):
+        total += int(numbers[i])
+    return total
 
 def count_vowels(string: str) -> int:
     """Return the number of vowels (a, e, i, o, u) in the string, ignoring case.
