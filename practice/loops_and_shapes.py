@@ -128,7 +128,13 @@ def create_number_triangle(n: int) -> List[str]:
     Example:
         create_number_triangle(3) -> ['1', '22', '333']
     """
-    pass
+    list_ = []
+
+    for i in range(1,n+1):
+        list_.append(str(i)*i)
+
+    return list_
+
 
 
 def fibonacci_sequence(n: int) -> List[int]:
